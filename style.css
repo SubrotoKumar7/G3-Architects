@@ -96,7 +96,7 @@ img{
 
 /* team area style */
 main section{
-    margin-top: 100px;
+    margin: 50px;
 }
 .team-area{
     align-items: center;
@@ -130,12 +130,17 @@ main section{
 
 /* responsive media */
 @media screen and (max-width: 576px){
-    .navbar-area, .main-menu{
+    .navbar-area,
+    .main-menu, 
+    .team-area{
         flex-direction: column;
     }
     .main-menu{
         margin-top: 20px;
         text-align: center;
         gap: 10px;
+    }
+    .team-img-container, .team-content{
+        width: 100%;
     }
 }
