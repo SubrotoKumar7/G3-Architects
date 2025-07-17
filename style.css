@@ -128,6 +128,55 @@ main section{
     color: var(--btn);
 }
 
+/* feature area style */
+.feature-area{
+    gap: 100px;
+}
+.feature-content, .feature-img{
+    width: 50%;
+}
+.feature-content > .section-title{
+    border-left: 5px solid var(--btn);
+    padding-left: 20px;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    margin: 20px 0;
+    border-radius: 8px;
+}
+.feature-card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark1);
+}
+.card-description{
+    color: var(--dark3);
+    padding: 5px 0;
+}
+.feature-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.experience-badge{
+    background-color: var(--btn);
+    color: white;
+    padding: 35px 45px;
+    display: inline-block;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -80px;
+    margin-top: -100px;
+}
+.experience-badge #year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 /* fact area style */
 .fact-container{
     display: grid;
@@ -178,11 +227,13 @@ main section{
     filter: grayscale(100%);
 }
 
+
 /* responsive media */
 @media screen and (max-width: 576px){
     .navbar-area,
     .main-menu, 
-    .team-area{
+    .team-area,
+    .feature-area{
         flex-direction: column;
     }
     .main-menu{
@@ -192,6 +243,20 @@ main section{
     }
     .team-img-container, .team-content{
         width: 100%;
+    }
+    .feature-area{
+        align-items: center;
+    }
+    .feature-content, .feature-img{
+        width: 100%;
+    }
+    .experience-badge{
+        padding: 20px 30px;
+        font-size: 1.5rem;
+        margin: 20px 0;
+    }
+    .experience-badge #year{
+        font-size: 3rem;
     }
     .fact-container{
         grid-template-columns: 1fr;
