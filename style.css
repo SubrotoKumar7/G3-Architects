@@ -162,6 +162,22 @@ main section{
     color: var(--dark3);
 }
 
+/* sponsor area style */
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    gap: 70px;
+}
+.sponsor-companies img{
+    filter: grayscale(100%);
+}
+
 /* responsive media */
 @media screen and (max-width: 576px){
     .navbar-area,
@@ -180,5 +196,9 @@ main section{
     .fact-container{
         grid-template-columns: 1fr;
         justify-items: center;
+    }
+    .sponsor-companies{
+        grid-template-columns: 1fr;
+        gap: 60px;
     }
 }
